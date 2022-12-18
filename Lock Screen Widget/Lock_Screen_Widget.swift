@@ -94,6 +94,8 @@ struct Lock_Screen_Widget: Widget {
     }
 }
 
+
+//creating new views
 struct Lock_Screen_Widget_Previews: PreviewProvider {
     static var previews: some View {
         Lock_Screen_WidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
