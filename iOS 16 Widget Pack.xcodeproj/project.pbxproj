@@ -14,6 +14,13 @@
 		D827DC48294DC1C100499920 /* iOS_16_Widget_PackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D827DC47294DC1C100499920 /* iOS_16_Widget_PackTests.swift */; };
 		D827DC52294DC1C100499920 /* iOS_16_Widget_PackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D827DC51294DC1C100499920 /* iOS_16_Widget_PackUITests.swift */; };
 		D827DC54294DC1C100499920 /* iOS_16_Widget_PackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D827DC53294DC1C100499920 /* iOS_16_Widget_PackUITestsLaunchTests.swift */; };
+		D827DC67294DC22300499920 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D827DC66294DC22300499920 /* WidgetKit.framework */; };
+		D827DC69294DC22300499920 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D827DC68294DC22300499920 /* SwiftUI.framework */; };
+		D827DC6C294DC22300499920 /* Lock_Screen_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D827DC6B294DC22300499920 /* Lock_Screen_Widget.swift */; };
+		D827DC6F294DC22700499920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D827DC6E294DC22700499920 /* Assets.xcassets */; };
+		D827DC71294DC22700499920 /* Lock_Screen_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D827DC6D294DC22400499920 /* Lock_Screen_Widget.intentdefinition */; };
+		D827DC72294DC22700499920 /* Lock_Screen_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D827DC6D294DC22400499920 /* Lock_Screen_Widget.intentdefinition */; };
+		D827DC75294DC22700499920 /* Lock Screen WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D827DC64294DC22200499920 /* Lock Screen WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,28 @@
 			remoteGlobalIDString = D827DC32294DC1BD00499920;
 			remoteInfo = "iOS 16 Widget Pack";
 		};
+		D827DC73294DC22700499920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D827DC2B294DC1BD00499920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D827DC63294DC22200499920;
+			remoteInfo = "Lock Screen WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D827DC79294DC22700499920 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D827DC75294DC22700499920 /* Lock Screen WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D827DC33294DC1BD00499920 /* iOS 16 Widget Pack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS 16 Widget Pack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +72,13 @@
 		D827DC4D294DC1C100499920 /* iOS 16 Widget PackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS 16 Widget PackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D827DC51294DC1C100499920 /* iOS_16_Widget_PackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_16_Widget_PackUITests.swift; sourceTree = "<group>"; };
 		D827DC53294DC1C100499920 /* iOS_16_Widget_PackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_16_Widget_PackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D827DC64294DC22200499920 /* Lock Screen WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lock Screen WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D827DC66294DC22300499920 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D827DC68294DC22300499920 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D827DC6B294DC22300499920 /* Lock_Screen_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock_Screen_Widget.swift; sourceTree = "<group>"; };
+		D827DC6D294DC22400499920 /* Lock_Screen_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Lock_Screen_Widget.intentdefinition; sourceTree = "<group>"; };
+		D827DC6E294DC22700499920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D827DC70294DC22700499920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +103,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D827DC61294DC22200499920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D827DC69294DC22300499920 /* SwiftUI.framework in Frameworks */,
+				D827DC67294DC22300499920 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +121,8 @@
 				D827DC35294DC1BD00499920 /* iOS 16 Widget Pack */,
 				D827DC46294DC1C100499920 /* iOS 16 Widget PackTests */,
 				D827DC50294DC1C100499920 /* iOS 16 Widget PackUITests */,
+				D827DC6A294DC22300499920 /* Lock Screen Widget */,
+				D827DC65294DC22300499920 /* Frameworks */,
 				D827DC34294DC1BD00499920 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +133,7 @@
 				D827DC33294DC1BD00499920 /* iOS 16 Widget Pack.app */,
 				D827DC43294DC1C100499920 /* iOS 16 Widget PackTests.xctest */,
 				D827DC4D294DC1C100499920 /* iOS 16 Widget PackUITests.xctest */,
+				D827DC64294DC22200499920 /* Lock Screen WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +174,26 @@
 			path = "iOS 16 Widget PackUITests";
 			sourceTree = "<group>";
 		};
+		D827DC65294DC22300499920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D827DC66294DC22300499920 /* WidgetKit.framework */,
+				D827DC68294DC22300499920 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D827DC6A294DC22300499920 /* Lock Screen Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D827DC6B294DC22300499920 /* Lock_Screen_Widget.swift */,
+				D827DC6D294DC22400499920 /* Lock_Screen_Widget.intentdefinition */,
+				D827DC6E294DC22700499920 /* Assets.xcassets */,
+				D827DC70294DC22700499920 /* Info.plist */,
+			);
+			path = "Lock Screen Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +204,12 @@
 				D827DC2F294DC1BD00499920 /* Sources */,
 				D827DC30294DC1BD00499920 /* Frameworks */,
 				D827DC31294DC1BD00499920 /* Resources */,
+				D827DC79294DC22700499920 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D827DC74294DC22700499920 /* PBXTargetDependency */,
 			);
 			name = "iOS 16 Widget Pack";
 			productName = "iOS 16 Widget Pack";
@@ -183,6 +252,23 @@
 			productReference = D827DC4D294DC1C100499920 /* iOS 16 Widget PackUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D827DC63294DC22200499920 /* Lock Screen WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D827DC76294DC22700499920 /* Build configuration list for PBXNativeTarget "Lock Screen WidgetExtension" */;
+			buildPhases = (
+				D827DC60294DC22200499920 /* Sources */,
+				D827DC61294DC22200499920 /* Frameworks */,
+				D827DC62294DC22200499920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lock Screen WidgetExtension";
+			productName = "Lock Screen WidgetExtension";
+			productReference = D827DC64294DC22200499920 /* Lock Screen WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +290,9 @@
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = D827DC32294DC1BD00499920;
 					};
+					D827DC63294DC22200499920 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 				};
 			};
 			buildConfigurationList = D827DC2E294DC1BD00499920 /* Build configuration list for PBXProject "iOS 16 Widget Pack" */;
@@ -222,6 +311,7 @@
 				D827DC32294DC1BD00499920 /* iOS 16 Widget Pack */,
 				D827DC42294DC1C100499920 /* iOS 16 Widget PackTests */,
 				D827DC4C294DC1C100499920 /* iOS 16 Widget PackUITests */,
+				D827DC63294DC22200499920 /* Lock Screen WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +340,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D827DC62294DC22200499920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D827DC6F294DC22700499920 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D827DC72294DC22700499920 /* Lock_Screen_Widget.intentdefinition in Sources */,
 				D827DC39294DC1BD00499920 /* ContentView.swift in Sources */,
 				D827DC37294DC1BD00499920 /* iOS_16_Widget_PackApp.swift in Sources */,
 			);
@@ -279,6 +378,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D827DC60294DC22200499920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D827DC6C294DC22300499920 /* Lock_Screen_Widget.swift in Sources */,
+				D827DC71294DC22700499920 /* Lock_Screen_Widget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +399,11 @@
 			isa = PBXTargetDependency;
 			target = D827DC32294DC1BD00499920 /* iOS 16 Widget Pack */;
 			targetProxy = D827DC4E294DC1C100499920 /* PBXContainerItemProxy */;
+		};
+		D827DC74294DC22700499920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D827DC63294DC22200499920 /* Lock Screen WidgetExtension */;
+			targetProxy = D827DC73294DC22700499920 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,6 +525,7 @@
 		D827DC58294DC1C100499920 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +554,7 @@
 		D827DC59294DC1C100499920 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +652,58 @@
 			};
 			name = Release;
 		};
+		D827DC77294DC22700499920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lock Screen Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lock Screen Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Devin.iOS-16-Widget-Pack.Lock-Screen-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D827DC78294DC22700499920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lock Screen Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lock Screen Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Devin.iOS-16-Widget-Pack.Lock-Screen-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,6 +739,15 @@
 			buildConfigurations = (
 				D827DC5E294DC1C100499920 /* Debug */,
 				D827DC5F294DC1C100499920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D827DC76294DC22700499920 /* Build configuration list for PBXNativeTarget "Lock Screen WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D827DC77294DC22700499920 /* Debug */,
+				D827DC78294DC22700499920 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
